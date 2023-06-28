@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import "./App.css";
-import User from "./components/User";
 import { findings } from "./store/findings";
 import { useAppDispatch, useAppSelector } from "./store/store";
 
@@ -36,7 +35,13 @@ const App = () => {
         ) : state.isError ? (
           state.isError
         ) : (
-          state.users.map((item: any) => <User key={item.id} item={item} />)
+          state.users.map((item: any) => 
+          <li>
+            <a target={item.html_url} href={item.html_url}>
+              {item.name}
+            </a>
+          </li>
+          )
         )}
       </ul>
     </div>
