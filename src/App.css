@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: circle;
+}
+.main{
+  width: 400px;
+  margin: 50px auto;
+}
+.box{
+  display: flex;
+  justify-content: space-around;
+  padding: 7px 0;
+}
+input{
+  padding: 5px;
+}
+button{
+  padding:3px 10px;
+  cursor: pointer;
+}
